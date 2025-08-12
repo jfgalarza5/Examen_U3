@@ -1,10 +1,10 @@
 const CACHE_NAME = "espe-app-v1";
 const APP_SHELL = [
-  "/",
-  "/sw.js",
-  "/index.html",
-  "/js/app.js",
-  "/css/app.css",
+  "./",
+  "./sw.js",
+  "./index.html",
+  "./js/app.js",
+  "./css/app.css",
   "https://fonts.googleapis.com/icon?family=Material+Icons",
   "https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css",
   "https://code.getmdl.io/1.3.0/material.min.js",
