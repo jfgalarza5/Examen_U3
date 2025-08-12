@@ -1,0 +1,30 @@
+{
+  "name": "tarea-2",
+  "version": "1.0.0",
+  "main": "sw.js",
+  "scripts": {
+    "dev": "live-server --open=./index.html",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "serve": "http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfgalarza5/tarea2-pwa-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfgalarza5/tarea2-pwa-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jfgalarza5/tarea2-pwa-boilerplate#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "prettier": "^3.6.2"
+  }
+}
