@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script defer src="./js/app.js"></script>
+    <title>ESPE PWA</title>
+    <meta name="theme-color" content="#1a4d80">
+    <link rel="icon" type="image/png" href="./src/images/icons/icon-144x144.png" sizes="144x144" />
+    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css" />
+    <link rel="manifest" href="/manifest.webmanifest.json">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">ESPE</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="#inicio" onclick="mostrarPagina('inicio')">Inicio</a>
+                    <a class="mdl-navigation__link" href="#sobre" onclick="mostrarPagina('sobre')">Sobre la ESPE</a>
+                    <a class="mdl-navigation__link" href="#oferta" onclick="mostrarPagina('oferta')">Oferta
+                        Académica</a>
+                    <a class="mdl-navigation__link" href="#admision" onclick="mostrarPagina('admision')">Proceso de
+                        Admisión</a>
+                    <a class="mdl-navigation__link" href="#contacto" onclick="mostrarPagina('contacto')">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="mdl-layout__drawer">
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#inicio" onclick="mostrarPagina('inicio')">
+                    <i class="material-icons mdl-color-text--primary">home</i> Inicio
+                </a>
+                <a class="mdl-navigation__link" href="#sobre" onclick="mostrarPagina('sobre')">
+                    <i class="material-icons mdl-color-text--primary">school</i> Sobre la ESPE
+                </a>
+                <a class="mdl-navigation__link" href="#oferta" onclick="mostrarPagina('oferta')">
+                    <i class="material-icons mdl-color-text--primary">book</i> Oferta Académica
+                </a>
+                <a class="mdl-navigation__link" href="#admision" onclick="mostrarPagina('admision')">
+                    <i class="material-icons mdl-color-text--primary">how_to_reg</i> Proceso de Admisión
+                </a>
+                <a class="mdl-navigation__link" href="#contacto" onclick="mostrarPagina('contacto')">
+                    <i class="material-icons mdl-color-text--primary">contact_mail</i> Contacto
+                </a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+
+                <!-- Inicio -->
+                <section id="inicio" class="card-wide lg-card" style="margin:auto;">
+                    <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                        <h2 class="mdl-card__title-text">Bienvenido a la ESPE</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Explora nuestra historia, carreras y proceso de admisión.
+                    </div>
+                </section>
+
+                <!-- Sobre la ESPE -->
+                <section id="sobre" class="card-wide lg-card " style="margin:auto; display: none;">
+                    <div class="mdl-card__title mdl-color--indigo mdl-color-text--white">
+                        <h2 class="mdl-card__title-text">Sobre la ESPE</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p><strong>Historia:</strong> Fundada en 1922, la ESPE ha formado líderes en ingeniería,
+                            ciencias y tecnología.</p>
+                        <p><strong>Misión:</strong> Formar profesionales competentes con valores éticos y compromiso
+                            social.</p>
+                        <p><strong>Visión:</strong> Ser una universidad de excelencia reconocida a nivel nacional e
+                            internacional.</p>
+                    </div>
+                </section>
+
+                <!-- Oferta Académica -->
+                <section id="oferta" class="card-wide lg-card " style="margin:auto; display: none;">
+                    <div class="mdl-card__title mdl-color--deep-purple mdl-color-text--white">
+                        <h2 class="mdl-card__title-text">Oferta Académica</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <ul>
+                            <li><strong>Ingeniería en Software:</strong> Desarrollo de soluciones innovadoras en
+                                tecnología.</li>
+                            <li><strong>Ingeniería Mecatrónica:</strong> Integración de sistemas mecánicos, electrónicos
+                                y de control.</li>
+                            <li><strong>Ingeniería Civil:</strong> Diseño y construcción de infraestructura sostenible.
+                            </li>
+                            <li><strong>Administración de Empresas:</strong> Gestión estratégica y liderazgo
+                                empresarial.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Proceso de Admisión -->
+                <section id="admision" class="card-wide lg-card " style="margin:auto; display: none;">
+                    <div class="mdl-card__title mdl-color--teal mdl-color-text--white">
+                        <h2 class="mdl-card__title-text">Proceso de Admisión</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <ol>
+                            <li>Registro en la plataforma de admisiones.</li>
+                            <li>Presentación de la prueba de aptitud académica.</li>
+                            <li>Entrega de documentos requeridos.</li>
+                            <li>Confirmación de matrícula.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Contacto -->
+                <section id="contacto" class="card-wide lg-card " style="margin:auto; display: none;">
+                    <div class="mdl-card__title mdl-color--amber mdl-color-text--black">
+                        <h2 class="mdl-card__title-text">Contacto</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p><strong>Dirección:</strong> Av. General Rumiñahui S/N, Sangolquí, Ecuador</p>
+                        <p><strong>Teléfono:</strong> +593 2 398-9400</p>
+                        <p><strong>Email:</strong> info@espe.edu.ec</p>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer class="mdl-mega-footer">
+
+            <div class="mdl-mega-footer__bottom-section">
+                <div class="mdl-logo">ESPE</div>
+                <ul class="mdl-mega-footer__link-list">
+                    <p>Derechos reservados</p>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
