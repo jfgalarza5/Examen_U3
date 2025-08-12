@@ -1,0 +1,19 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "ESPE PWA: Portal Informativo",
+  "short_name": "ESPE PWA",
+  "description": "Aplicacion de un sitio web informativo sobre la universidad, organizado en varias secciones",
+  "theme_color": "#1a4d80",
+  "background_color": "#1a4d80",
+  "display": "standalone",
+  "start_url":".",
+  "scope": ".",
+  "icons": [{
+    "src": "/assets/icons/icon-144x144.png",
+    "sizes": "126x144"
+  }, {
+    "src": "assets/icons/icon-256x256.png",
+    "sizes": "256x256"
+  }]
+}
