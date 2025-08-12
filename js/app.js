@@ -23,3 +23,24 @@ function mostrarPagina(pagina){
         }
     }
 }
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('beforeInstallPrompt event fired');
+    e.preventDefault();
+    deferredPrompt = e;
+});
+
+const bannerInstall = document.getElementById('banner-install');
+
+bannerInstall.addEventListener('click', async () => {
+    console.log('Install button clicked');
+    if(deferredPrompt) {
+        deferredPrompt.prompt();
+        const response = await deferredPrompt.userChoice;
+        if(response.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+    }
+});
