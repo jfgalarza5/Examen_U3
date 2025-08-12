@@ -7,8 +7,8 @@
   "theme_color": "#1a4d80",
   "background_color": "#1a4d80",
   "display": "standalone",
-  "start_url":".",
-  "scope": ".",
+  "start_url":"/Examen_U3/",
+  "scope": "/Examen_U3/",
   "icons": [{
     "src": "/assets/icons/icon-144x144.png",
     "sizes": "126x144"
